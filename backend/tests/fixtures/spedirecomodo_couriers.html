@@ -1,0 +1,471 @@
+<html><form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After24 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="23" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                        <div class="courier-overlay position-absolute">
+                            <div class="position-relative w-100 h-100">
+                                <p class="courier-disable-first-text">Corriere disponibile solo con Partita IVA certificata</p>
+                                <u class="courier-disable-second-text">Attiva Ora</u>
+                            </div>
+                        </div>
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 24/48h
+                                    <br />
+                                    <div class="review23 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-23">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">BRT Pro</span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(23)">
+                                    <img id="id-couriers-img6" src="/img/easyWayTrust.png" srcset="/img/easyWayTrust.png 1x, /img/easyWayTrust@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+                                <img class="ml-1 ml-sm-2" src="/img/AssicurazioneOpzionale.png" srcset="/img/AssicurazioneOpzionale.png 1x, /img/AssicurazioneOpzionale@2x.png 2x" alt="AssicurazioneOpzionale" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Copertura assicurativa opzionale disponibile fino a 2500 €" />
+
+                                <img class="ml-1 ml-sm-2" src="/img/FreePod.png" srcset="/img/FreePod.png 1x, /img/FreePod@2x.png 2x" alt="FreePod" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Prova di consegna disponibile" />
+
+
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/Sponda.png" srcset="/img/Sponda.png 1x, /img/Sponda@2x.png 2x" alt="Sponda" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Disponibile opzione sponda, adatta per pacchi pesanti e con pallet" />
+
+                                                                                                                                            
+                                                            <i class="fa fa-briefcase ml-1 ml-sm-2" aria-hidden="true" style="color: #8DA7C0;font-size:20px" data-toggle="tooltip" data-placement="bottom" title="Corriere PRO"></i>
+                                <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><b>Corriere PROfessionale per P.IVA</b><p class="ship-subtitle">Un nome, una garanzia di un servizio ad alta affidabilità. Veloce, preciso, puntuale, anche sopra i 30kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        6,55
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        6.55
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                                <button type="button" id="not-logged" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form>
+<form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After48 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="24" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                        <div class="courier-overlay position-absolute">
+                            <div class="position-relative w-100 h-100">
+                                <p class="courier-disable-first-text">Corriere disponibile solo con Partita IVA certificata</p>
+                                <u class="courier-disable-second-text">Attiva Ora</u>
+                            </div>
+                        </div>
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 3/5gg
+                                    <br />
+                                    <div class="review24 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-24">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">Poste Delivery Business </span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(24)">
+                                    <img id="id-couriers-img6" src="/img/PDB.png" srcset="/img/PDB.png 1x, /img/PDB@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/GPS.png" srcset="/img/GPS.png 1x, /img/GPS@2x.png 2x" alt="GPS" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Tracciatura superiore alla media" />
+
+
+
+
+                                                                                                                                            
+                                                            <i class="fa fa-briefcase ml-1 ml-sm-2" aria-hidden="true" style="color: #8DA7C0;font-size:20px" data-toggle="tooltip" data-placement="bottom" title="Corriere PRO"></i>
+                                <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><b>Corriere PROfessionale per P.IVA</b><p class="ship-subtitle">Il servizio veloce e conveniente del courier Poste Italiane, disponibile anche sopra i 30 Kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        6,74
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        6.74
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                                <button type="button" id="not-logged" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form>
+<form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After48 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="35" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 3/5gg
+                                    <br />
+                                    <div class="review35 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-35">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">Poste Delivery Business </span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(35)">
+                                    <img id="id-couriers-img6" src="/img/PDBPriv.png" srcset="/img/PDBPriv.png 1x, /img/PDBPriv@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/GPS.png" srcset="/img/GPS.png 1x, /img/GPS@2x.png 2x" alt="GPS" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Tracciatura superiore alla media" />
+
+
+
+
+                                                                                                                                            
+                                                            <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><p class="ship-subtitle">Il servizio veloce e conveniente del courier Poste Italiane, disponibile anche sopra i 30 Kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        6,88
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        6.88
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                            <button type="submit" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form>
+<form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After24 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="2" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 24/48h
+                                    <br />
+                                    <div class="review2 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-2">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">BRT</span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(2)">
+                                    <img id="id-couriers-img6" src="/img/easyWay.png" srcset="/img/easyWay.png 1x, /img/easyWay@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+                                <img class="ml-1 ml-sm-2" src="/img/AssicurazioneOpzionale.png" srcset="/img/AssicurazioneOpzionale.png 1x, /img/AssicurazioneOpzionale@2x.png 2x" alt="AssicurazioneOpzionale" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Copertura assicurativa opzionale disponibile fino a 2500 €" />
+
+                                <img class="ml-1 ml-sm-2" src="/img/FreePod.png" srcset="/img/FreePod.png 1x, /img/FreePod@2x.png 2x" alt="FreePod" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Prova di consegna disponibile" />
+
+                                <img class="ml-1 ml-sm-2" src="/img/GPS.png" srcset="/img/GPS.png 1x, /img/GPS@2x.png 2x" alt="GPS" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Tracciatura superiore alla media" />
+
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/Sponda.png" srcset="/img/Sponda.png 1x, /img/Sponda@2x.png 2x" alt="Sponda" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Disponibile opzione sponda, adatta per pacchi pesanti e con pallet" />
+
+                                                                                                                                            
+                                                            <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><b>Cerchi un servizio premium?</b><p class="ship-subtitle">Un nome, una garanzia di un servizio ad alta affidabilità. Veloce, preciso, puntuale, anche sopra i 30kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        7,65
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        7.65
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                            <button type="submit" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form>
+<form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After24 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="29" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 24/48h
+                                    <br />
+                                    <div class="review29 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-29">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">UPS</span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(29)">
+                                    <img id="id-couriers-img6" src="/img/ups.png" srcset="/img/ups.png 1x, /img/ups@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/FreePod.png" srcset="/img/FreePod.png 1x, /img/FreePod@2x.png 2x" alt="FreePod" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Prova di consegna disponibile" />
+
+                                <img class="ml-1 ml-sm-2" src="/img/GPS.png" srcset="/img/GPS.png 1x, /img/GPS@2x.png 2x" alt="GPS" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Tracciatura superiore alla media" />
+
+
+
+
+                                                                                                                                            
+                                                            <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><b>Risparmia utilizzando il dropoff</b><p class="ship-subtitle">Un nome, una garanzia di un servizio ad alta affidabilità. Veloce, preciso, puntuale, anche sopra i 30kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        8,00
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        8
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                            <button type="submit" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form>
+<form action="/Shipping/ShipCouriers" class="col-md-12 col-lg-4 After24 grid-item remove-min-width ship-courier-form px-2" method="post" style="min-width:429px;"><input name="__RequestVerificationToken" type="hidden" value="REDACTED" /><input id="IdCorriere" name="IdCorriere" type="hidden" value="27" /><input data-val="true" data-val-number="The field Int32 must be a number." id="IdSpedizioneTemp" name="IdSpedizioneTemp" type="hidden" value="0" />                <div class="card card-couriers position-relative">
+                                            <div class="card-header">
+                            <div class="row">
+                                <div class="col-6 text-left couriers-title pt-3">
+                                    Espresso 24/48h
+                                    <br />
+                                    <div class="review27 px-0">
+                                    </div>
+
+                                    <div class="d-inline review-data" style="position:relative;top:2px;">
+                                        <span class="d-none bestReputationSort">0</span>
+                                        <span id="review-max-27">/5</span>
+                                        <span class="row ship-subtitle" style="font-weight:400;color:#3D5F80;padding-left:17px;"><span style="font-weight:700;color:#3D5F80">GLS</span></span>
+                                    </div>
+
+                                    <div class="to-bottom small-text pb-2">
+                                        Ritiro: <span class="pick-up">
+                                            Dal 01/10
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-right no-padding" id="couriers_img6" onclick="getCourierInfo(27)">
+                                    <img id="id-couriers-img6" src="/img/GLS.png" srcset="/img/GLS.png 1x, /img/GLS@2x.png 2x" alt="Logo" style="width:200px;height:163px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 align-items-center" style="padding-bottom:0!important" id="icons">
+
+                                <img class="ml-1 ml-sm-2" src="/img/AssicurazioneOpzionale.png" srcset="/img/AssicurazioneOpzionale.png 1x, /img/AssicurazioneOpzionale@2x.png 2x" alt="AssicurazioneOpzionale" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Copertura assicurativa opzionale disponibile fino a 1500 €" />
+
+
+                                <img class="ml-1 ml-sm-2" src="/img/GPS.png" srcset="/img/GPS.png 1x, /img/GPS@2x.png 2x" alt="GPS" style="width:30px;height:26px" data-toggle="tooltip" data-placement="bottom" title="Tracciatura superiore alla media" />
+
+
+
+
+                                                                                                                                            
+                                                            <img class="float-right" src="/img/RichiedeStampante.png" srcset="/img/RichiedeStampante.png 1x, /img/RichiedeStampante@2x.png 2x" alt="SiStampante" style="width:30px;height:26px" />
+                                <span class="float-right text-icon-off pr-2" style="margin-top:-2px;">
+                                    Richiede<br/>stampante
+                                </span>
+                            <hr />
+                        </div>
+                                            <div class="card-body pt-0 position-relative">
+                            <a href="/Account/YourAccount?view=your_account_pocketbook" class="ship-subtitle no-link position-absolute" style="bottom:14px;font-size: 12px; color: #007bff">
+                                
+                                Usa le Ricariche per risparmiare
+                            </a>
+                            <div class="row pt-1">
+                                <div class="d-none d-sm-block col-7 col-sm-8 pb-1">
+                                    <div class="ship-subtitle"><b>Vuoi spedire sotto i 30 kg?</b><p class="ship-subtitle">Il servizio veloce e conveniente del courier GLS, disponibile anche sopra i 30 Kg.</p></div>
+                                </div>
+                                <div class="d-none d-sm-block col-1"></div>
+                                <div class="col-12 col-sm-4 text-center no-padding pb-3 mr-0 mr-sm-3" id="payment-couriers">
+
+                                    <div class="protection-text">
+                                        16,17
+                                    </div>
+                                    <div class="d-none bestPriceSort">
+                                        16.17
+                                    </div>
+                                    <span class="sub-no-protection">
+                                        <b class="iva-text">
+                                            €(IVA Escl.)
+                                        </b>
+                                    </span>
+
+                                    <div class="mt-2 mt-sm-0 div-button-ship mx-3 mx-sm-0">
+
+                                            <button type="submit" class="btn-ship">Scegli</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+</form></html>

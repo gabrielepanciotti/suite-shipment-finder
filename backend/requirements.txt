@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+# The node owns its data: Alembic scaffold in backend/migrations, asyncpg driver.
+alembic
+asyncpg
+httpx
+greenlet
+pydantic>=2.0

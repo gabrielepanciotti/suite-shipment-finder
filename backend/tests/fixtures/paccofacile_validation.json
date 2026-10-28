@@ -1,0 +1,77 @@
+{
+ "header": {
+  "status": "SUCCESS",
+  "notification": {
+   "code": 0,
+   "messages": "Success"
+  }
+ },
+ "data": {
+  "services_available": [
+   {
+    "carrier": "INPOST",
+    "name": "POINT TO POINT",
+    "service_id": 109,
+    "price_total": {
+     "amount": "5.75",
+     "currency": "EUR",
+     "vat_amount": "1.04",
+     "taxable_amount": 4.71
+    },
+    "available_for_private_individuals": 1,
+    "delivery_date": {
+     "delivery_days": 3,
+     "first_delivery_date": "2026-10-06"
+    }
+   },
+   {
+    "carrier": "POSTE ITALIANE",
+    "name": "PDB STANDARD POINT-POINT",
+    "service_id": 122,
+    "price_total": {
+     "amount": "5.78",
+     "currency": "EUR",
+     "vat_amount": "1.04",
+     "taxable_amount": 4.73
+    },
+    "available_for_private_individuals": 1,
+    "delivery_date": {
+     "delivery_days": 4,
+     "first_delivery_date": "2026-10-07"
+    }
+   },
+   {
+    "carrier": "POSTE ITALIANE",
+    "name": "PDB STANDARD POINT-HOME",
+    "service_id": 121,
+    "price_total": {
+     "amount": "6.54",
+     "currency": "EUR",
+     "vat_amount": "1.18",
+     "taxable_amount": 5.36
+    },
+    "available_for_private_individuals": 1,
+    "delivery_date": {
+     "delivery_days": 4,
+     "first_delivery_date": "2026-10-07"
+    }
+   },
+   {
+    "carrier": "POSTE ITALIANE",
+    "name": "PDB EXPRESS HOME-HOME",
+    "service_id": 125,
+    "price_total": {
+     "amount": "7.97",
+     "currency": "EUR",
+     "vat_amount": "1.44",
+     "taxable_amount": 6.53
+    },
+    "available_for_private_individuals": 1,
+    "delivery_date": {
+     "delivery_days": 1,
+     "first_delivery_date": "2026-10-02"
+    }
+   }
+  ]
+ }
+}

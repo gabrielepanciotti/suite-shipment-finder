@@ -1,0 +1,28 @@
+services:
+  backend:
+    image: python:3.13-slim
+    working_dir: /workspace/backend
+    command: >
+      sh -c "pip install --no-cache-dir /Life/packages/shared /Life/packages/backend-core -r requirements.txt &&
+      uvicorn shipmentfinder_backend:app --host 0.0.0.0 --port 8000 --reload"
+    environment:
+      PORT: ${PORT:-8000}
+      UVICORN_RELOAD: ${UVICORN_RELOAD:-1}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ../backend:/workspace/backend
+      - ../../Life:/Life:ro
+  frontend:
+    image: node:20-alpine
+    working_dir: /workspace/frontend
+    command: sh -c "npm ci && npm run dev -- --host 0.0.0.0"
+    environment:
+      VITE_BACKEND_PROXY_TARGET: ${VITE_BACKEND_PROXY_TARGET:-http://backend:8000}
+    ports:
+      - "${FRONTEND_PORT:-5173}:5173"
+    volumes:
+      - ../frontend:/workspace/frontend
+      - ../../Life:/Life:ro
+    depends_on:
+      - backend
